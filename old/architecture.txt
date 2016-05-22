@@ -1,0 +1,21 @@
+Accueil
+	-Documents
+	-faire plaisir
+		-bapteme
+		-vol d'initiation
+		-deja breveté ?
+	-Devenir pilote
+		-Brevet de base
+		-PPL
+---		-qualif possible
+	-Club
+		-instalation
+		-flote
+		-l'equipe
+	-Pour les jeunes
+		-BIA
+		-brevet -> Devenir pilote
+		-bourses
+	-Contact et acces
+	
+	-exté : openflyers
