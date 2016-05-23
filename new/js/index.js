@@ -1,4 +1,6 @@
-String.prototype.contains = function(it) { return this.indexOf(it) != -1; };
+String.prototype.contains = function(it) {
+    return this.indexOf(it) != -1;
+};
 
 // window.onscroll = function(){
 //   var toggleBarScroll = document.getElementById('navbar').scrollHeight/2;
@@ -8,3 +10,18 @@ String.prototype.contains = function(it) { return this.indexOf(it) != -1; };
 //     document.getElementById('navbar').className = document.getElementById('navbar').className.replace("navbar-fixed-top","");
 //   }
 // }
+$(document).ready(function() {
+
+    $('li.dropdown').on('click', function() {
+        var $el = $(this);
+        if ($el.hasClass('open')) {
+            var $a = $el.children('a.dropdown-toggle');
+            if ($a.length && $a.attr('href')) {
+                location.href = $a.attr('href');
+            }
+        }
+    });
+
+
+
+});

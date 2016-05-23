@@ -1,9 +1,61 @@
-html, body {
-  margin: 0px;
-  width: 100%;
-  overflow-x: hidden;
+/*Tablets and desktop*/
+
+@media(min-width:768px) {
+    nav {
+        padding: 10px;
+        margin: auto;
+    }
+    .navbar-nav a {
+        color: #F9F4F5;
+        border: 1px solid transparent;
+        border-radius: 5px;
+    }
+    .navbar-nav a:hover {
+        color: #2A3F69 !important;
+        background-color: #D8DBE2 !important;
+        border: 1px solid transparent;
+        border-radius: 5px;
+    }
+    .nav>li>a:hover, .nav .open>a, .nav .open>a:focus, .nav .open>a:hover, .nav>li>a:focus, .nav .dropdown-menu>li>a:focus {
+        color: #2A3F69 !important;
+        background-color: #D8DBE2 !important;
+        border: none;
+    }
 }
 
+/*phones*/
+
+@media(max-width: 767px) {
+    .header {
+        color: #F9F4F5;
+        background-color: #2A3F69;
+        border: 1px solid transparent;
+        border-radius: 5px;
+    }
+    .navbar-nav a {
+        color: #F9F4F5;
+    }
+    .nav .open>a, .nav .open>a:focus, .nav>li>a:focus, .nav .dropdown>li>a:focus, .nav .dropdown-toggle>li>a:focus {
+        color: #F9F4F5 !important;
+        background-color: transparent !important;
+        border: 1px solid #778DA9 !important;
+    }
+}
+
+/*phones tablet and desktop*/
+
+
+/*global*/
+
+html, body {
+    margin: 0px;
+    width: 100%;
+    overflow-x: hidden;
+}
+.row {
+    padding-right: 0px;
+    margin-right: 0px;
+}
 #site-container {
     background-color: #778DA9;
     background: -webkit-linear-gradient(left, #778DA9, #C3BCBC, #778DA9);
@@ -11,93 +63,78 @@ html, body {
     background: linear-gradient(to right, #778DA9, #C3BCBC, #778DA9);
     margin: auto;
     border-radius: 5px;
-    color :#2A3F69;
-
+    color: #2A3F69;
+    min-height: 100vh;
+}
+.content {
+    padding-top: 5px;
+    padding-bottom: 100px;
+}
+.content .well {
+    background-color: #F9F4F5;
+    color: #2A3F69;
 }
 
-.row {
-  padding-right: 0px;
-  margin-right: 0px;
-}
+/*navigation*/
 
-nav {
+.header {
     color: #F9F4F5;
     background-color: #2A3F69;
-    padding: 5px;
-    margin: auto;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+nav img {
+    height: 50px;
+}
+.nav .dropdown-menu {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.nav .dropdown-menu>li>a {
+    color: #F9F4F5 !important;
+    background-color: #2A3F69;
 }
 
+/*Carousel*/
 
-
-.navbar-nav a{
-  color : #F9F4F5;
+#press_carousel {
+    background-image: none;
+    margin: 5px;
+    border-top: 1px solid #D8DBE2;
+    border-bottom: 1px solid #D8DBE2;
+    border-radius: 5px;
+    padding: 5px 0px;
+}
+.carousel .item {
+    /*height: 300px;*/
+}
+.carousel-inner .item img {
+    /*height: 300px;
+position: relative;
+top: 50%;
+transform: translateY(-50%);*/
+}
+.carousel-control.left, .carousel-control.right {
+    background: none !important;
+}
+.footer {
+    width: 100%;
+    bottom: 0;
+    left: 0
 }
 
-.navbar-nav a:hover{
-  color : #2A3F69 !important;
-  background-color: #D8DBE2 !important;
+/*helper class*/
+
+.nopadding {
+    padding: 0px !important;
 }
 
-@media (max-width:767px) {
+/*@media (max-width:767px) {
     .navbar-header {
         float: left;
     }
     .navbar-nav {
         float: right;
     }
-}
-
-.dropdown-menu{
-  background-color: transparent !important;
-  border : none !important;
-  box-shadow: none !important;
-}
-
-.dropdown-menu>li>a{
- color : #F9F4F5 !important;
- background-color: #2A3F69;
-}
-.dropdown-menu>li>a:hover{
- color : #2A3F69 !important;
- background-color: #D8DBE2 !important;
-}
-
-
-
-
-
-#press_carousel {
-    background-image: none
-    margin : 5px;
-    border-top: 1px solid #D8DBE2 ;
-    border-bottom: 1px solid #D8DBE2;
-    border-radius: 5px;
-}
-.carousel .item {
-    height: 300px;
-}
-
-.carousel-inner .item img {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.carousel-control.left, .carousel-control.right {
-    background: none !important;
-}
-
-.divider{
-  height: 1px;
-  background-color: rgba(42,63,105,.3);
-}
-
-
-.content {
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-.content .well{
-  background-color: #F9F4F5;
-  color : #2A3F69;
-}
+}*/
