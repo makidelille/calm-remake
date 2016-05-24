@@ -1,5 +1,4 @@
 /*Tablets and desktop*/
-
 @media(min-width:768px) {
     nav {
         padding: 10px;
@@ -52,6 +51,7 @@ html, body {
     width: 100%;
     overflow-x: hidden;
 }
+body { padding-bottom: 50px; }
 .row {
     padding-right: 0px;
     margin-right: 0px;
@@ -64,11 +64,11 @@ html, body {
     margin: auto;
     border-radius: 5px;
     color: #2A3F69;
-    min-height: 100vh;
 }
 .content {
     padding-top: 5px;
     padding-bottom: 100px;
+    min-height: 80vh;
 }
 .content .well {
     background-color: #F9F4F5;
@@ -91,7 +91,7 @@ nav img {
     border: none !important;
     box-shadow: none !important;
 }
-.nav .dropdown-menu>li>a {
+.nav .dropdown-menu>li>a, .footer>li>a, a.navbar-brand {
     color: #F9F4F5 !important;
     background-color: #2A3F69;
 }
@@ -118,16 +118,54 @@ transform: translateY(-50%);*/
 .carousel-control.left, .carousel-control.right {
     background: none !important;
 }
-.footer {
+
+.avion{
+  padding: 10px 0px;
+}
+
+
+.copyright {
     width: 100%;
-    bottom: 0;
-    left: 0
+}
+
+.footer {
+  color : #D8DBE2 !important;
+  background-color: #2A3F69;
+  position: fixed;
+  bottom: 0;
+  width : 100%;
 }
 
 /*helper class*/
 
 .nopadding {
     padding: 0px !important;
+}
+
+.tab_to_right {
+  margin-left: 30px;
+}
+.tab_to_left {
+  margin-left: -30px;
+}
+.rotate_90R {
+  transform: rotate(90deg);
+}
+
+.rotate_5L {
+  transform: rotate(-5deg);
+}
+
+.rotate_5R {
+  transform: rotate(5deg);
+}
+
+.text, .avion>div>p{
+  margin:  10px 10px;
+}
+
+.nofooter{
+  padding-bottom: 0px !important;
 }
 
 /*@media (max-width:767px) {
