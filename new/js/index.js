@@ -2,22 +2,19 @@ String.prototype.contains = function(it) {
     return this.indexOf(it) != -1;
 };
 
-Array.prototype.contains = function(it) {
-    for (var i = 0; i < this.length; i++) {
-        if (this[i] === it) return true;
-    }
-    return false;
-}
+const mobile = window.matchMedia("only screen and (max-width: 768px)")["matches"];
 
-// window.onscroll = function(){
-//   var toggleBarScroll = document.getElementById('navbar').scrollHeight/2;
-//   if(document.body.scrollTop > toggleBarScroll && !document.getElementById('navbar').className.contains('navbar-fixed-top')){
-//     document.getElementById('navbar').className = document.getElementById('navbar').className + " navbar-fixed-top";
-//   }else if(document.body.scrollTop < toggleBarScroll && document.getElementById('navbar').className.contains('navbar-fixed-top') ){
-//     document.getElementById('navbar').className = document.getElementById('navbar').className.replace("navbar-fixed-top","");
-//   }
-// }
+
 $(document).ready(function() {
+    /*SETUP*/
+    if (!mobile) {
+        $($(".footer")[0]).hide();
+        $('body').scrollspy({target:".navbar", offset:30})
+    } else {
+        $($(".footer")[1]).addClass("hidden-xs");
+          $('body').scrollspy({target:".navbar", offset:30})
+    }
+
 
     $('li.dropdown').on('click', function() {
         var $el = $(this);
@@ -31,8 +28,16 @@ $(document).ready(function() {
 
     $(".footer a, .dropdown-menu a").on('click', function(event) {
 
+        console.log($(this).parents('#footerbar_xs'), $(this).parents('#navbar_xs'));
+        if ($(this).parents('#footerbar_xs').length > 0) {
+            $(".footer button.navbar-toggle").click();
+        } else if ($(this).parents('#navbar_xs').length > 0) {
+            //  $(".header button.navbar-toggle").click();
+        }
+
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
+            /*navbar retracting*/
 
 
             /**smooth scrolling**/
@@ -47,15 +52,23 @@ $(document).ready(function() {
                 window.location.hash = hash;
             });
 
-            /*navbar retracting*/
-            console.log($(this));
-            if ($(this).parents('#footer_xs').length > 0) {
-                $(".footer button.navbar-toggle").click();
-                return;
-            } else if ($(this).parents($('#navbar_xs')).length > 0) {
-                $(".header button.navbar-toggle").click();
-                return;
+        }
+    });
+
+    $(window).on('scroll', function() {
+        if ($(this).scrollTop() > ($(".header")[mobile ? 1 : 0].scrollHeight)) {
+            if (!mobile) {
+                $($(".footer")[0]).fadeIn(200);
+            } else {
+                $($(".footer")[1]).removeClass("hidden-xs");
+            }
+        } else {
+            if (!mobile) {
+                $($(".footer")[0]).fadeOut(200);
+            } else {
+                $($(".footer")[1]).addClass("hidden-xs");
             }
         }
     });
+
 });
