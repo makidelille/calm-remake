@@ -99,7 +99,7 @@ transform: translateY(-50%);*/
     color: #D8DBE2;
     background-color: #2A3F69;
     position: fixed;
-    bottom: 0;
+    bottom: -1;
     width: 100%;
 }
 
