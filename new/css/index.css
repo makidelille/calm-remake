@@ -1,10 +1,4 @@
-
-
-/*phones tablet and desktop*/
-
-
 /*global*/
-
 html, body {
     margin: 0px;
     width: 100%;
@@ -13,6 +7,8 @@ html, body {
 body {
     padding-bottom: 50px;
 }
+
+
 .row {
     padding-right: 0px;
     margin-right: 0px;
@@ -30,6 +26,7 @@ body {
     padding-top: 5px;
     padding-bottom: 100px;
     min-height: 80vh;
+    font-size: 1em;
 }
 .content .well {
     background-color: #F9F4F5;
@@ -125,6 +122,10 @@ transform: translateY(-50%);*/
 .tab_to_left {
     margin-left: -30px;
 }
+.rotate_180{
+  transform: rotate(180deg);
+}
+
 .rotate_90R {
     transform: rotate(90deg);
 }
@@ -134,9 +135,23 @@ transform: translateY(-50%);*/
 .rotate_5R {
     transform: rotate(5deg);
 }
+
+.flip_LR{
+  transform: scaleX(-1);
+}
+
+.flip_TB{
+    transform: scaleY(-1);
+}
+
 .text, .avion>div>p {
     margin: 10px 10px;
 }
+
+.text-underline {
+  text-decoration: underline;
+}
+
 .nofooter {
     padding-bottom: 0px !important;
 }

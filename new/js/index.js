@@ -4,6 +4,14 @@ String.prototype.contains = function(it) {
 
 const mobile = window.matchMedia("only screen and (max-width: 768px)")["matches"];
 
+function smoothScrollTo(hash){
+  $('html, body').animate({
+      scrollTop: $(hash).offset().top
+  }, 800, function() {
+      window.location.hash = hash;
+  });
+}
+
 
 $(document).ready(function() {
     /*SETUP*/
@@ -36,22 +44,9 @@ $(document).ready(function() {
         }
 
         // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-            /*navbar retracting*/
-
-
-            /**smooth scrolling**/
-
-            // Prevent default anchor click behavior
+        if (this.hash !== "" && this.href.replace(this.hash,"") == window.location.href.replace(window.location.hash,"")) { //t.href.replace(t.hash,"")
             event.preventDefault();
-            // Store hash (#)
-            var hash = this.hash;
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 800, function() {
-                window.location.hash = hash;
-            });
-
+            smoothScrollTo(this.hash);
         }
     });
 
@@ -71,4 +66,20 @@ $(document).ready(function() {
         }
     });
 
+    //for evry abbr add tooltip
+    $('abbr').on("mouseover",function(e){
+      $(this).tooltip({
+        title : $(this).attr("title")
+
+      });
+    });
+
 });
+
+//on load smooth scrolling
+window.onload = function(){
+  if(window.location.hash !== ""){
+    window.scrollTo(0,0);
+    smoothScrollTo(window.location.hash);
+  }
+}
