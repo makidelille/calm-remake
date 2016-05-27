@@ -86,6 +86,22 @@ transform: translateY(-50%);*/
 .carousel-control.left, .carousel-control.right {
     background: none !important;
 }
+#photo-display{
+  max-height: 100%;
+}
+
+#photo-display .thumbnail{
+  margin : 5px;
+  max-height: 210px;
+  max-width: 310px;
+  display: inline-block;
+}
+
+ #photo-display img{
+   max-height: 200px;
+   max-width: 300px;
+ }
+
 .avion {
     padding: 10px 0px;
 }
@@ -155,6 +171,8 @@ transform: translateY(-50%);*/
 .nofooter {
     padding-bottom: 0px !important;
 }
+
+.img-center {margin:0 auto;}
 
 /*@media (max-width:767px) {
     .navbar-header {

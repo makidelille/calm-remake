@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Galerie</title>
     <link rel="icon" type="image/png" href="img/favicon.png" />
@@ -16,10 +17,186 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="js/galerie.js"></script>
     <script src="js/index.js"></script>
-  </head>
-  <body>
+</head>
+<div id="site-container">
+    <nav class="header navbar hidden-xs" data-spy="" data-offset-top="00" role="navigation">
+        <div class="navbar-header">
+            <a href=""><img src="img/LOGO_CALM-remake.png" alt="" class="nopadding"></a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="dropdown">
+                <a href="Faire_plaisir.html" class="dropdown-toggle" data-toggle="dropdown">Faire Plaisir <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="Club">
+                    <li><a href="Faire_plaisir.html#bapteme">bapteme</a></li>
+                    <li><a href="Faire_plaisir.html#volInit">vol d'initiation</a></li>
+                    <li><a href="Faire_plaisir.html#dejabrevete">deja breveté ?</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="Devenir_Pilote.html" class="dropdown-toggle" data-toggle="dropdown">Devenir Pilote <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="Club">
+                    <li><a href="Devenir_Pilote.html#BB">Brevet de base</a></li>
+                    <li><a href="Devenir_Pilote.html#PPL">PPL</a></li>
+                    <li><a href="Devenir_Pilote.html#Qualif">Qualif possible</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="Pour_les_jeunes.html#" class="dropdown-toggle" data-toggle="dropdown">Pour les jeunes <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="Club">
+                    <li><a href="/Pour_les_jeunes.html#BIA">BIA</a></li>
+                    <li><a href="/Pour_les_jeunes.html#Bourses">bourses</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="Club.html#" class="dropdown-toggle" data-toggle="dropdown">Club <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="/Club.html#installation">installation</a></li>
+                    <li><a href="/Club.html#flote">Flote</a></li>
+                    <li><a href="/Club.html#equipe">L'equipe</a></li>
+                    <li><a href="/Club.html#contact">Contact et acces</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="http://calm.openflyers.fr/"><span class="glyphicon glyphicon-plane"></span></a></li>
+            <li><a href="Documents.html"><span class="glyphicon glyphicon-duplicate"></span></a></li>
+            <li><a href="contact.html"><span class="glyphicon glyphicon-info-sign"></span></a></li>
+        </ul>
+        </ul>
+    </nav>
+    <nav class="header navbar visible-xs" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar_xs">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="glyphicon glyphicon-menu-hamburger"></span>
+            </button>
+            <a href="#" class="navbar-brand nopadding"><img src="img/LOGO_CALM-remake.png" class="" /></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar_xs">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="Faire_plaisir.html" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-menu-right"></span> Faire Plaisir </a>
+                    <ul class="dropdown-menu" role="Club">
+                        <li><a href="Faire_plaisir.html#bapteme">bapteme</a></li>
+                        <li><a href="Faire_plaisir.html#volInit">vol d'initiation</a></li>
+                        <li><a href="Faire_plaisir.html#dejabrevete">deja breveté ?</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="Devenir_Pilote.html" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-menu-right"></span> Devenir Pilote </a>
+                    <ul class="dropdown-menu" role="Club">
+                        <li><a href="Devenir_Pilote.html#BB">Brevet de base</a></li>
+                        <li><a href="Devenir_Pilote.html#PPL">PPL</a></li>
+                        <li><a href="Devenir_Pilote.html#Qualif">Qualif possible</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="Pour_les_jeunes.html#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-menu-right"></span> Pour les jeunes </a>
+                    <ul class="dropdown-menu" role="Club">
+                        <li><a href="Pour_les_jeunes.html#BIA">BIA</a></li>
+                        <li><a href="Pour_les_jeunes.html#Bourses">bourses</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="Club.html#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-menu-right"></span> Club</a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="Club.html#installation">installation</a></li>
+                        <li><a href="Club.html#flote">Flote</a></li>
+                        <li><a href="Club.html#equipe">L'equipe</a></li>
+                        <li><a href="Club.html#contact">Contact et acces</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="http://calm.openflyers.fr/">
+                        <span class="glyphicon glyphicon-plane"></span> OpenFlyers
+                    </a>
+                </li>
+                <li>
+                    <a href="Documents.html">
+                        <span class="glyphicon glyphicon-duplicate"></span> Documents
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <span class="glyphicon glyphicon-info-sign"></span> Infos
+                    </a>
+                </li>
 
-  DISPLAY PHOTO
+            </ul>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 well">
+            <div class="row">
+                <h1 class="text-center">Galerie Photos</h1>
+            </div>
+            <div class="row">
+                <div class="col-xs-12" align="center" id="photo-display">
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/1500x1000" alt="" />
+                    </div>
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/300x200" alt="" />
+                    </div>
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/300x200" alt="" />
+                    </div>
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/1500x1000" alt="" />
+                    </div>
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/200x300" alt="" />
+                    </div>
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/300x200" alt="" />
+                    </div>
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/300x200" alt="" />
+                    </div>
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/300x200" alt="" />
+                    </div>
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/200x300" alt="" />
+                    </div>
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/300x200" alt="" />
+                    </div>
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/1500x1000" alt="" />
+                    </div>
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/300x200" alt="" />
+                    </div>
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/2200x1200" alt="" />
+                    </div>
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/2200x1200" alt="" />
+                    </div>
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/2200x1200" alt="" />
+                    </div>
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/200x300" alt="" />
+                    </div>
+                </div>
 
-  </body>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="col-md-4 col-md-offset-4 col-sm-8 col-sm-offset-2 col-xs-12 text-center">
+            <h6>Le Calm, partenaire d'Aéroport de Lille et Sogarel</h6></div>
+        <div class="row">
+            <div class="col-md-2 col-md-offset-4 col-sm-4 col-sm-offset-2 col-xs-6"><img src="img/AP LILLE.png" class="img-responsive" alt=""></div>
+
+            <div class="col-md-2 col-sm-4 col-xs-6"><img src="img/SOGAREL.png" class="img-responsive" alt=""></div>
+        </div>
+    </div>
+</div>
+</body>
+
 </html>
