@@ -19,7 +19,7 @@ $(document).ready(function() {
         $($(".footer")[0]).hide();
         $('body').scrollspy({target:".navbar", offset:30})
     } else {
-        $($(".footer")[1]).addClass("hidden-xs");
+        $($(".footer")[1]).addClass("hidden-sm");
           $('body').scrollspy({target:".navbar", offset:30})
     }
 
