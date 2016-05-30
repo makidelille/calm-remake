@@ -16,124 +16,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
+    <?php
+        include("php/functions.php");
+    ?>
 
 </head>
 
-<body data-spy="scroll" data-target="" data-offset="50">
-    <div id="site-container">
-        <nav class="header navbar hidden-sm" data-spy="" data-offset-top="00" role="navigation">
-            <div class="navbar-header">
-                <a href="index.html"><img src="img/LOGO_CALM-remake.png" alt="" class="nopadding"></a>
-            </div>
-            <ul class="nav navbar-nav">
-                <li class="dropdown">
-                    <a href="Faire_plaisir.html" class="dropdown-toggle" data-toggle="dropdown">Faire Plaisir <span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="Club">
-                        <li><a href="Faire_plaisir.html#bapteme">bapteme</a></li>
-                        <li><a href="Faire_plaisir.html#volinit">vol d'initiation</a></li>
-                        <li><a href="Faire_plaisir.html#dejabrevete">deja breveté ?</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="Devenir_Pilote.html" class="dropdown-toggle" data-toggle="dropdown">Devenir Pilote <span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="Club">
-                        <li><a href="Devenir_Pilote.html#BB">Brevet de base</a></li>
-                        <li><a href="Devenir_Pilote.html#PPL">PPL</a></li>
-                        <li><a href="Devenir_Pilote.html#Qualif">Qualif possible</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="Pour_les_jeunes.html#" class="dropdown-toggle" data-toggle="dropdown">Pour les jeunes <span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="Club">
-                        <li><a href="Pour_les_jeunes.html#BIA">BIA</a></li>
-                        <li><a href="Pour_les_jeunes.html#Bourses">bourses</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="Club.html#" class="dropdown-toggle" data-toggle="dropdown">Club <span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="Club.html#installation">installation</a></li>
-                        <li><a href="Club.html#flote">Flote</a></li>
-                        <li><a href="Club.html#equipe">L'equipe</a></li>
-                        <li><a href="Club.html#contact">Contact et acces</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="galerie.html"> <span class="glyphicon glyphicon-picture"></span></a>
-                </li>
-                <li><a href="http://calm.openflyers.fr/"><span class="glyphicon glyphicon-plane"></span></a></li>
-                <li><a href="Documents.html"><span class="glyphicon glyphicon-duplicate"></span></a></li>
-                <li><a href="contact.html"><span class="glyphicon glyphicon-info-sign"></span></a></li>
-            </ul>
-        </nav>
-        <nav class="header navbar visible-sm" role="navigation">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar_xs">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="glyphicon glyphicon-menu-hamburger"></span>
-                </button>
-                <a href="#" class="navbar-brand nopadding"><img src="img/LOGO_CALM-remake.png" class="" /></a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar_xs">
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a href="Faire_plaisir.html" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-menu-right"></span> Faire Plaisir </a>
-                        <ul class="dropdown-menu" role="Club">
-                            <li><a href="Faire_plaisir.html#bapteme">bapteme</a></li>
-                            <li><a href="Faire_plaisir.html#volinit">vol d'initiation</a></li>
-                            <li><a href="Faire_plaisir.html#dejabrevete">deja breveté ?</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="Devenir_Pilote.html" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-menu-right"></span> Devenir Pilote </a>
-                        <ul class="dropdown-menu" role="Club">
-                            <li><a href="Devenir_Pilote.html#BB">Brevet de base</a></li>
-                            <li><a href="Devenir_Pilote.html#PPL">PPL</a></li>
-                            <li><a href="Devenir_Pilote.html#Qualif">Qualif possible</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="Pour_les_jeunes.html#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-menu-right"></span> Pour les jeunes </a>
-                        <ul class="dropdown-menu" role="Club">
-                            <li><a href="Pour_les_jeunes.html#BIA">BIA</a></li>
-                            <li><a href="Pour_les_jeunes.html#Bourses">bourses</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="Club.html#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-menu-right"></span> Club</a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="Club.html#installation">installation</a></li>
-                            <li><a href="Club.html#flote">Flote</a></li>
-                            <li><a href="Club.html#equipe">L'equipe</a></li>
-                            <li><a href="Club.html#contact">Contact et acces</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="galerie.html">
-                            <span class="glyphicon glyphicon-picture"></span> Photos
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://calm.openflyers.fr/">
-                            <span class="glyphicon glyphicon-plane"></span> OpenFlyers
-                        </a>
-                    </li>
-                    <li>
-                        <a href="Documents.html">
-                            <span class="glyphicon glyphicon-duplicate"></span> Documents
-                        </a>
-                    </li>
-                    <li>
-                        <a href="contact.html">
-                            <span class="glyphicon glyphicon-info-sign"></span> Infos
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-        </nav>
+<body>
+<div id="site-container">
+    <?php
+            generateNav();
+         ?>
         <div class="content" id="top">
             <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 well text-center">
                 <div class="row">
