@@ -132,10 +132,12 @@ function generateCarousel(){
                         </ol>
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
-                                <img src="img/Baptmes.jpg" class=" img-rounded center-block">
+                                <a href="Faire_plaisir.php#bapteme">
+                                <img src="img/Baptmes.jpg" class=" img-rounded center-block"></a>
                             </div>
                             <div class="item">
-                                <img src="img/VolInitiation_re.JPG" class=" img-rounded center-block">
+                            <a href="Faire_plaisir.php#volinit">
+                                <img src="img/VolInitiation_re.JPG" class=" img-rounded center-block"></a>
                             </div>
                             <div class="item">
                                 <img src="img/WT9_re.jpg" class="img-rounded center-block">
@@ -150,3 +152,4 @@ function generateCarousel(){
                     </div>
                 </div>';
 }
+

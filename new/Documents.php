@@ -22,7 +22,7 @@
 
 </head>
 
-<body>
+<body class="nofooter">
 <div id="site-container">
     <?php
             generateNav();

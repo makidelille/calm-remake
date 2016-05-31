@@ -10,6 +10,7 @@
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height" />
 
     <link href="css/index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/galerie.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
     <!--scripts-->
@@ -23,7 +24,7 @@
 
 </head>
 
-<body>
+<body class="nofooter">
 <div id="site-container">
     <?php
             generateNav();
@@ -32,10 +33,11 @@
         <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 well">
             <div class="row">
                 <h1 class="text-center">Galerie Photos</h1>
+                <hr>
             </div>
             <div class="row">
                 <div class="col-xs-12" align="center" id="photo-display">
-                    <div class="thumbnail">
+                    <div class="thumbnail center-block">
                         <img src="http://placehold.it/1500x1000" alt="" />
                     </div>
                     <div class="thumbnail">
@@ -77,30 +79,14 @@
                     <div class="thumbnail">
                         <img src="http://placehold.it/2200x1200" alt="" />
                     </div>
-                    <div class="thumbnail">
+                    <div class="thumbnail center-block">
                         <img src="http://placehold.it/2200x1200" alt="" />
                     </div>
                     <div class="thumbnail">
                         <img src="http://placehold.it/200x300" alt="" />
                     </div>
                 </div>
-                <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="zoomModal">
-                    <div class="modal-dialog " role="document">
-                        <div class="modal-content noshadow">
-                            <div class="modal-header">
-                                <button type="button" data-dismiss="modal" aria-label="Close" style="background:white; border-radius:3px"><span aria-hidden="true">&times;</span></button>
-                            </div>
-                            <div class="modal-body center-block" align="center">
-                                <button class="center-block col-xs-1 glyphicon glyphicon-menu-left" value="0"></button>
-                                <img id="img" src="http://placehold.it/200x300" alt="" class="col-xs-10" />
-                                <button class="center-block col-xs-1 glyphicon glyphicon-menu-right" value="1"></button>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
+               </div>
         </div>
         <div class="copyright">
             <div class="col-md-4 col-md-offset-4 col-sm-8 col-sm-offset-2 col-xs-12 text-center">
@@ -112,6 +98,33 @@
             </div>
         </div>
     </div>
+    </div>
+    <!-- full screen display -->
+    <div display="hidden" id="fullscreen">
+        <div id="fullscreenControls">
+            <span class="" id="close" align="center" >
+                 <span class="glyphicon glyphicon-remove"></span>
+            </span>
+
+            <span class="" id="left">
+                <span class="glyphicon glyphicon-triangle-left"></span>
+            </span>
+            <span class="" id="right">
+                <span class="glyphicon glyphicon-triangle-right"></span>
+            </span>
+
+            <span id="toggleIcons">
+                <span class="glyphicon glyphicon-collapse-down"></span>
+            </span>
+
+        </div>
+        <div id="fullscreenImg"></div>
+
+
+
+    </div>
+
+
     </body>
 
 </html>
