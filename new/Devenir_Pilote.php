@@ -31,32 +31,9 @@
                 <div class="row">
                     <h1 class="text-center">Devenir pilote</h1>
                 </div>
-                <div class="row">
-                    <div id="press_carousel" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#press_carousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#press_carousel" data-slide-to="1"></li>
-                            <li data-target="#press_carousel" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner" role="listbox">
-                            <div class="item active">
-                                <img src="img/Baptmes.jpg" class=" img-rounded center-block">
-                            </div>
-                            <div class="item">
-                                <img src="img/Vol dinitiation_re.JPG" class=" img-rounded center-block">
-                            </div>
-                            <div class="item">
-                                <img src="img/WT9_re.jpg" class="img-rounded center-block">
-                            </div>
-                        </div>
-                        <a class="left carousel-control" href="#press_carousel" role="button" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                        </a>
-                        <a class="right carousel-control" href="#press_carousel" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                        </a>
-                    </div>
-                </div>
+            <?php
+            generateCarousel();
+            ?>
                 <div class="row text-justify">
                     <h2 class="text-center">Devenir pilote !</h2>
                     <p class="text"> <span class="col-xs-1"></span>Certains veulent devenir professionnels, d’autres instructeurs… Certains veulent prendre de la hauteur sur les choses, d’autres tout simplement admirer nos magnifiques paysages.. Il en était qui voulaient
