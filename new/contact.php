@@ -2,11 +2,9 @@
 <html>
 
 <head>
-    <title>Contact et Accès</title>
-
     <?php
         include("php/functions.php");
-        generateHeader();
+        echo head();
     ?>
 
 
@@ -15,74 +13,20 @@
 <body data-spy="scroll" data-target="" data-offset="50" class="nofooter">
     <div id="site-container">
         <?php
-            generateNav();
+            echo nav();
          ?>
         <div class="content">
             <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 well">
-                <div class="row">
+                <div class="row text-center">
                     <h1>Contact et Accès</h1>
                 </div>
-                <div class="row text-justify">
-                    <div class="text">
-                        <h3 class="text-underline">Horaires</h3>
-                        <p><span class="col-xs-1"></span>Patricia sera heureuse de vous accueillir au secrétariat aux horaires suivants :</p>
-                        <ul class="list-unstyled text-center"> <strong>
-                            <li>Le mardi de 13h à 19h</li>
-                            <li>Le mercredi de 13h à 20h</li>
-                            <li>Le vendredi de 13h à 19h</li>
-                            <li>Le samedi de 13h à 18h</li>
-                            <li>Les lundi, jeudi et dimanche, le secrétariat est fermé.</li>
-                          </strong></ul>
-                    </div>
-                    <div class="text">
-                        <h3 class="text-underline">Contact</h3>
-                        <address class="text-center">
-                        <strong>Boite Postale : </strong><br/>
-                      Club aérien Lille Métropole<br/>
-                       Aéroport Lille Lesquin <br/>
-                       59810 Lesquin<br/>
-                       <strong>Tel : </strong><em>03.20.60.18.54</em><br/>
-                       <strong>Mail : </strong><a href="mailto:">info@calm.club</a><br/>
-                       <a href="https://www.facebook.com/CALM.Aeroclub">Facebook <span class="glyphicon glyphicon-share"></span></a>
-                    </address>
-                    </div>
-                    <div class="text">
-                        <h3 class="text-underline">Accès</h3>
-                        <p class="text">
-                            <h4><span class="glyphicon glyphicon-road"></span> Par la route :</h4>
-                            <ul class="list-unstyled">
-                                <li><span class="col-xs-1"></span>Rue de l’aéroclub à Lesquin</li>
-                                <li><span class="col-xs-1"></span>Coordonnées GPS: <mark><em>+50° 34' 24.24", +3° 5' 35.75"</mark></em> </li>
-                            </ul>
-                            <ul class="list-unstyled">
-                                En venant de Lille par l'A1 Lille - Paris :
-                                <li><span class="col-xs-1"></span><span class="glyphicon glyphicon-share-alt flip_TB"></span> sortie 20b – Dir. Aéroport Lesquin – Dir. Aviation de loisirs </li>
-                            </ul>
-                            <ul class="list-unstyled">
-                                En venant de Paris par l'A1 Paris - Lille :
-                                <li><span class="col-xs-1"></span><span class="glyphicon glyphicon-share-alt flip_TB"></span> sortie Lesquin – Dir. Aéroport Lesquin – Dir. Aviation de loisirs </li>
-                            </ul>
-                            <ul class="list-unstyled">
-                                En venant de Valenciennes ou de la Belgique par l'A23 :
-                                <li><span class="col-xs-1"></span><span class="glyphicon glyphicon-share-alt flip_TB"></span>sortie n°1 – Dir. Aéroport Lesquin – Dir. Aviation de loisirs</li>
-                            </ul>
-                            <h4><span class="glyphicon glyphicon-plane"></span> Par les airs :</h4>
-                            <ul class="list-unstyled">
-                                <li><span class="col-xs-1"></span><span class="glyphicon glyphicon-share-alt flip_TB"></span> LFQQ est ouvert à la CAP</li>
-                                <li><span class="col-xs-1"></span><span class="glyphicon glyphicon-share-alt flip_TB"></span> LAT : <mark><em>50 33 48 N</mark></em> ; LONG : <mark><em>003 05 13 E</mark></em> ; DEC : <mark><em>1°W</mark></em></li>
-                                <li><span class="col-xs-1"></span><span class="glyphicon glyphicon-share-alt flip_TB"></span> ALT : <mark><em>157ft (6hPa)</mark></em> </li>
-                                <li><span class="col-xs-1"></span><span class="glyphicon glyphicon-share-alt flip_TB"></span> QFU 08/26 et 02/20</li>
-                                <li><span class="col-xs-1"></span><span class="glyphicon glyphicon-share-alt flip_TB"></span> Fréquences : TWR 118.55, GND 121.85, ATIS 119.325</li>
-                                <li><span class="col-xs-1"></span><span class="glyphicon glyphicon-share-alt flip_TB"></span> VFR de Nuit agréé</li>
-                                <li><span class="col-xs-1"></span><span class="glyphicon glyphicon-share-alt flip_TB"></span> Carburants : 100LL, cartes de crédit.</li>
-                            </ul>
-                        </p>
-                    </div>
-                </div>
+                <?php
+                    echo content();
+                ?>
             </div>
         </div>
         <?php
-            generateCopyright();
+            echo copyright();
         ?>
     </div>
 </body>

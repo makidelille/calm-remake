@@ -2,10 +2,9 @@
 <html>
 
 <head>
-    <title>Galerie</title>
     <?php
         include("php/functions.php");
-        generateHeader();
+        echo head();
     ?>
 
     <!-- galerie specific -->
@@ -18,7 +17,7 @@
 <body class="nofooter">
 <div id="site-container">
     <?php
-            generateNav();
+            echo nav();
          ?>
     <div class="content">
         <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 well">
@@ -26,61 +25,12 @@
                 <h1 class="text-center">Galerie Photos</h1>
                 <hr>
             </div>
-            <div class="row">
-                <div class="col-xs-12" align="center" id="photo-display">
-                    <div class="thumbnail center-block">
-                        <img src="http://placehold.it/1500x1000" alt="" />
-                    </div>
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/300x200" alt="" />
-                    </div>
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/300x200" alt="" />
-                    </div>
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/1500x1000" alt="" />
-                    </div>
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/200x300" alt="" />
-                    </div>
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/300x200" alt="" />
-                    </div>
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/300x200" alt="" />
-                    </div>
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/300x200" alt="" />
-                    </div>
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/200x300" alt="" />
-                    </div>
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/300x200" alt="" />
-                    </div>
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/1500x1000" alt="" />
-                    </div>
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/300x200" alt="" />
-                    </div>
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/2200x1200" alt="" />
-                    </div>
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/2200x1200" alt="" />
-                    </div>
-                    <div class="thumbnail center-block">
-                        <img src="http://placehold.it/2200x1200" alt="" />
-                    </div>
-                    <div class="thumbnail">
-                        <img src="http://placehold.it/200x300" alt="" />
-                    </div>
-                </div>
-               </div>
+            <?php
+                echo content();
+            ?>
         </div>
         <?php
-            generateCopyright();
+           echo copyright();
         ?>
     </div>
     </div>

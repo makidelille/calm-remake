@@ -88,16 +88,16 @@
 
 }
 #close.hover {
-    background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.10),rgba(63, 63, 63, 0.5));
+    background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.10),rgba(63, 63, 63, 0.35));
 }
 
 #left.hover{
-    background: linear-gradient(to left,rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.10),rgba(63, 63, 63, 0.5));
+    background: linear-gradient(to left,rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.10),rgba(63, 63, 63, 0.35));
 
 }
 
 #right.hover{
-    background: linear-gradient(to right,rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.10),rgba(63, 63, 63, 0.5));
+    background: linear-gradient(to right,rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.10),rgba(63, 63, 63, 0.35));
 }
 
 #close .glyphicon,#right .glyphicon,#left .glyphicon{
