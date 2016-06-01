@@ -31,5 +31,5 @@ function prettify($str){
 }
 
 function content(){
-    return prettify(file_get_contents(strtolower("data".str_replace(".php",".htm",$_SERVER['PHP_SELF']))));
+    return prettify(file_get_contents(strtolower("data".str_replace(".php",".htm",rtrim($_SERVER['PHP_SELF'] ,"/")))));
 }
