@@ -1,0 +1,113 @@
+#photo-display {
+    max-height: 100%;
+}
+#photo-display .thumbnail {
+    margin: 5px;
+    max-height: 210px;
+    max-width: 310px;
+    display: inline-block;
+    align-content: center;
+
+}
+#photo-display img {
+    height: 200px;
+    /*max-width: 300px;*/
+}
+
+#fullscreen{
+    height:110vh;
+    width:100vw;
+    display: block;
+    position: fixed;
+    top: 0;
+    background-color: rgba(37, 37, 37, 0.91);
+    z-index: 1;
+}
+
+#fullscreenImg{
+    background: url('../img/WT9.jpg') no-repeat center;
+    background-size: contain;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+}
+
+#fullscreenControls{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+#close{
+    position: fixed;
+    top : 0;
+    width : 100vw;
+    height:10vh;
+    display: flex;
+    border-radius: 10px;
+}
+
+#left{
+    position: fixed;
+    left : 0;
+    bottom : 10vh;
+    width : 30vw;
+    height: 80vh;
+    display: flex;
+    border-radius: 10px;
+}
+
+#right{
+    border-radius: 10px;
+    position: fixed;
+    bottom: 10vh;
+    right : 0;
+    width : 30vw;
+    height: 80vh;
+    display: flex;
+
+}
+
+#toggleIcons{
+    border-radius: 10px;
+    position: fixed;
+    bottom: 0;
+    right : 0;
+    width : 20vw;
+    height: 10vh;
+    display: flex;
+}
+
+#toggleIcons .glyphicon{
+    font-size: 5em;
+    align-self: center;
+    display: flex;
+    margin: auto;
+    color : rgba(128, 128, 128, 0.1);
+
+}
+#close.hover {
+    background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.10),rgba(63, 63, 63, 0.35));
+}
+
+#left.hover{
+    background: linear-gradient(to left,rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.10),rgba(63, 63, 63, 0.35));
+
+}
+
+#right.hover{
+    background: linear-gradient(to right,rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.10),rgba(63, 63, 63, 0.35));
+}
+
+#close .glyphicon,#right .glyphicon,#left .glyphicon{
+    align-self: center;
+    display: flex;
+    margin: auto;
+    font-size: 10em;
+    color : rgba(128, 128, 128, 0.1);
+}
+
+#close.hover .glyphicon,#right.hover .glyphicon,#left.hover .glyphicon,#toggleIcons.hover .glyphicon{
+    color : rgba(128, 128, 128, 0.8);
+}
